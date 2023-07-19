@@ -1,0 +1,63 @@
+# Site settings
+title: My Multilingual Website
+description: A simple multilingual website built with Jekyll
+baseurl: "" # Set this if your site is hosted in a subdirectory
+url: "https://yourusername.github.io" # Replace with your GitHub Pages URL
+
+# Multilingual support
+languages: ["en", "fr"] # Add more languages if needed
+
+# Default language (fallback if language is not specified)
+default_lang: "en"
+
+# Markdown configuration (optional)
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Plugins (if needed)
+plugins:
+  # Add your Jekyll plugins here
+
+# Exclude files/folders from the build (if needed)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Jekyll collections (if needed)
+collections:
+  # Add your custom collections here
+
+# Jekyll defaults (if needed)
+defaults:
+  # Add your default configurations here
+
+# Jekyll theme (if using a theme)
+theme: minima # Replace with the name of your theme
+
+# Custom navigation links
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+
+# Permalinks (optional)
+permalink: pretty
+
+# Sass configuration (if using Sass)
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# GitHub Pages specific settings (if using GitHub Pages)
+github_pages:
+  enabled: true
+  jekyll_plugins: # Add plugins needed for GitHub Pages (if any)
+    - jekyll-feed
+
